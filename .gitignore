@@ -1,0 +1,13 @@
+# Built application files
+*.apk
+*.ap_
+
+# Java class files
+*.class
+
+# Generated files
+appcompat_v7/bin/
+appcompat_v7/gen/
+.metadata/
+TestMusic/bin/
+TestMusic/gen/

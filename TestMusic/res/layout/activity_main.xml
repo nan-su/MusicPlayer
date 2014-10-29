@@ -1,0 +1,144 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CACAD9"
+    android:orientation="vertical"
+    tools:context="com.example.testmusic.MainActivity"  >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.02"
+        android:paddingLeft="9dp"
+        android:background="#80FFFFFF"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+          
+             >
+
+            <ImageView
+                android:id="@+id/imgIcon"
+                android:layout_width="20dp"
+                android:layout_height="30dp"
+                android:src="@drawable/track0" />
+
+            <TextView
+                android:id="@+id/txtTitile"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0.14"
+                android:text="Track 1"
+                android:textColor="#7373FF" />
+
+            <ImageButton
+                android:id="@+id/imgPlayList"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/abc_ab_stacked_solid_dark_holo" />
+
+        </LinearLayout>
+
+        
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="153dp"
+        android:layout_weight="0.73"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/imgArtists"
+            android:layout_width="314dp"
+            android:layout_height="match_parent"
+            android:layout_weight="28.88"
+            android:scaleType="fitCenter"
+            android:src="@drawable/track0" />
+        <!-- Timer Display -->
+    <LinearLayout
+        android:id="@+id/timerDisplay"
+       android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="10dp">
+        <!-- Current Duration Label -->
+        <TextView
+            android:id="@+id/songCurrentDurationLabel"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:textColor="#eeeeee"
+            android:textStyle="bold"/>
+        <!-- Total Duration Label -->
+        <TextView
+            android:id="@+id/songTotalDurationLabel"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:textColor="#04cbde"
+            android:textStyle="bold"/>
+    </LinearLayout>
+ 
+
+
+        <SeekBar
+            android:id="@+id/seekBar1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.19"
+        android:background="#80000000"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+             >
+
+            <ImageButton
+                android:id="@+id/imgP"
+                android:layout_width="104dp"
+                android:layout_height="fill_parent"
+                android:background="#00000000"
+                android:scaleType="fitCenter"
+                android:src="@drawable/pervious" />
+
+           <ToggleButton
+               android:id="@+id/imgS"
+               android:layout_width="30px"
+               android:layout_height="30px"
+               android:layout_marginLeft="5px"
+               android:layout_marginTop="5px"
+               android:background="@drawable/ic_play_pause"
+               android:textOn=""
+               android:textOff=""
+                >
+
+        </ToggleButton>
+
+            <ImageButton
+                android:id="@+id/imgN"
+                android:layout_width="92dp"
+                android:layout_height="26dp"
+                android:scaleType="fitCenter"
+                android:background="#00000000"
+                android:src="@drawable/next" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
